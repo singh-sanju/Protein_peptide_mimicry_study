@@ -1,0 +1,3 @@
+# Acknowledgements
+
+This work was completed under the mentorship of Dr Nikolina Šoštarić, Bionanoscience department, Delft University of Technology (TU Delft), Netherlands. I sincerely thank my PI for guidance, supervision, and the opportunity to pursue this research project. Computational work, including molecular dynamics production runs and post-processing, was performed on the DelftBlue Supercomputer at TU Delft, using GROMACS 2024 (module load GROMACS/2024r1-openmpi). I would also like to thank colleagues and lab members at TU Delft for technical help, feedback, and support during this study.
