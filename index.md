@@ -1,24 +1,32 @@
 ---
-title: Jupyter Book 2 Workshop Template
+title: Computational Workflow for Protein–Peptide Mimicry Study
 site:
   hide_outline: true
-  hide_toc: true
+  hide_toc: false
   hide_title_block: true
 ---
 
 <div style="text-align: center">
 
-# Jupyter Book 2 Workshop Template
+# Computational Workflow for Protein–Peptide Mimicry Study
 
 </div>
 
-```{figure} content/figures/logo.svg
+```{figure} content/figures/AS_front.png
 :width: 80%
 :align: center
 ```
 
-_A GitHub Template repository designed for use in Jupyter Book 2 and MyST workshops._
+🟦   This Jupyter Book documents a complete computational workflow for a protein–peptide molecular mimicry study.
+It focuses on microbe–derived peptides and a human self peptide interacting with a Class-I MHC protein associated with autoimmune diseases.
 
+<br>
+
+<div style="text-align: center", font-size: 1.5em>
+Sanju Singh
 <div style="text-align: center", font-size: 1.2em>
-Freek Pols, Luuk Fröling, Robert Lanzafame, Kirstie Whitaker, Jim Madge
+Guest Researcher, TU Delft, The Netherlands (March 2025-June 2025)
+
 </div>
+
+<br><br>

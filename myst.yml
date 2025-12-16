@@ -2,23 +2,21 @@
 version: 1
 project:
   id: 7204695b-7485-4989-863c-16cf6e4db155
-  title: Jupyter Book 2 Workshop Template
-  description: This description goes in the preface of the pdf output. 
+  title: Protein–Peptide Molecular Mimicry Study
+  description: Computational analysis of HLA-B27–associated peptides mimicry
+    using binding prediction, docking, and molecular dynamics simulations.
   # keywords: []
   authors:
-    - name: Freek Pols
-    - name: Luuk Fröling
-    - name: Robert Lanzafame
-    - name: Kirstie Whitaker
-    - name: Jim Madge
+    - name: Sanju Singh
   license:
     content: CC-BY-4.0
   references:
     myst-guide: https://mystmd.org/guide
     jupyter: https://docs.jupyter.org/en/latest
+    Github:  https://github.com/singh-sanju/HLA-B27_Peptide_Molecular_Mimicry_MD_Analysis
 
-  date: 2025-11-02 # ${BUILD_DATE} 
-  github: https://github.com/jupyter-book/workshop-template # Change this URL to your GitHub repository
+  date: 2025-12-15 # ${BUILD_DATE} 
+  github: https://github.com/singh-sanju/Protein_peptide_mimicry_study# Change this URL to your GitHub repository
   edit_url: 
   
   plugins:
@@ -37,13 +35,25 @@ project:
       repo: https://github.com/executablebooks/thebe-binder-base
 
   toc:
-    - file: index.md                      # the landing page
-    - file: content/introduction.md    - FILE: content/data-preparation.md
-    - file: content/data-preparation.md
+    - file: index.md                     
+    - file: content/introduction.md   
+
+    - file: content/materials.md
+
     - file: content/methods.md
+      children:
+        - file: content/data-preparation.md
+          children:
+            - file: content/pep_slicing.md
+            - file: content/pep_mimicry.md
+        - file: content/docking.md
+        - file: content/mdrun.md
+        - file: content/correction_md.md
+        - file: content/post_md.md
+
     - file: content/analysis.md
-    - file: content/results.md
     - file: content/conclusion.md
+    - file: content/Reproducibility.md
     - file: content/acknowledgements.md
     - file: content/references.md
     # - file: content/example.ipynb
