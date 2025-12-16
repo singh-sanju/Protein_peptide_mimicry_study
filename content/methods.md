@@ -1,86 +1,38 @@
 # Methods
 
-## Target Protein and Peptides
+This section describes the computational strategy used to identify and characterize microbial peptide candidates capable of mimicking a human self-peptide in binding to HLA-B27:05. 
 
-Target: HLA-B27:05
+The workflow consists of five major stages:
 
-Reference structure: PDB ID 5txs
+1. **Data Preparation**, including:
 
-Peptides studied:
+   - a.  Selection of data sources  
 
-Human Annexin peptide
+   - b. Peptide generation and extraction, comprising:
+     -  i. Peptide slicing  
+     - ii. Peptide filtering and molecular mimicry screening  
 
-Top Klebsiella pneumoniae–derived peptides
+2. **Molecular Docking and Selection of Peptides**
 
-## Peptide Generation
+3. **Molecular Dynamics Simulations**
 
-Peptide length: 9–12 mers
+4. **Post-Trajectory Correction and Processing**
 
-Sliding window approach
+5. **Post-MD Trajectory Analysis**
+                       
 
-Anchor residue rules for HLA-B27
+<br>
 
-Tools: Biopython
+The overview of the Pipeline is shown in {numref}`fig_workflow` and the detailed methods are presented in the next part.
 
-Mention script purpose (not code)
+<br>
 
-## Binding Prediction (NetMHCpan)
+</div>
 
-Tool: NetMHCpan
+```{figure} figures/methodology.png
+:name: fig_workflow
+:width: 100%
+:align: center
 
-Input: FASTA peptides
-
-Output: binding affinity
-
-Classification: Strong / Weak binders
-
-Only binders carried forward
-
-## Mimicry Scoring
-
-Sequence similarity between human and microbial peptides
-
-Scoring matrix: BLOSUM62
-
-Selection of top mimics
-
-Purpose: prioritize candidates
-
-## Docking
-
-Tool: AlphaFold-Multimer
-
-Docking of peptide–HLA complexes
-
-Output format: CIF + confidence files
-
-Visual inspection in PyMOL
-
-## Molecular Dynamics Simulation
-
-Preparation: AmberTools (tleap)
-
-Conversion to GROMACS
-
-Water model: TIP3P
-
-Ensemble: NVT → NPT → production
-
-Duration: microsecond scale
-
-Platform: DelftBlue supercomputer
-
-## Post-MD Analysis
-
-RMSD
-
-RMSF
-
-Radius of gyration
-
-SASA
-
-Hydrogen bonds
-
-MM-GBSA binding energy
-
+Overview of the workflow used in this study
+```
