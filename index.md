@@ -12,7 +12,7 @@ site:
 
 </div>
 
-```{figure} content/figures/AS_front.png
+```{figure} content/figures/logo.png
 :width: 80%
 :align: center
 ```

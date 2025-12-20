@@ -65,10 +65,6 @@ project:
     VSC: Visual Studio Code
     CLI: commmand line interface
 
-bibliography:
-  file: reference.bib
-  suppress_page_references: true
-
 site:
   template: book-theme
   options:

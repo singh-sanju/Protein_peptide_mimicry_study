@@ -176,7 +176,6 @@ While kp3 forms more hydrogen bonds, its high flexibility and structural deviati
 
 ```{list-table} Summary of MD simulation parameters for anx and microbial peptides
 :name: tab_md_summary
-:widths: 30 15 15 15 15
 :header-rows: 1
 
 * - Parameter

@@ -32,11 +32,11 @@ physiological ionic strength.
 
 
 
-{numref}`fig_workflow` shows the Solvated system of peptide–HLA-B27 complex before MD simulation
+{numref}`fig_md` shows the Solvated system of peptide–HLA-B27 complex before MD simulation
 
 
 ```{figure} figures/md_simulation.png
-:name: fig_workflow
+:name: fig_md
 :width: 95%
 :align: center
 
