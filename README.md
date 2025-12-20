@@ -12,6 +12,7 @@ The objective is to investigate whether microbial peptides can:
 - Exhibit comparable post-MD behavior.
 - Supporting a potential molecular mimicry mechanism.
 -------------------
+
 I focused on learning:
 
 - Peptide generation and filtering
