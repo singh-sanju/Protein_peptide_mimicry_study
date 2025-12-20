@@ -25,7 +25,7 @@ It focuses on microbe–derived peptides and a human self peptide interacting wi
 <div style="text-align: center", font-size: 1.5em>
 Sanju Singh
 <div style="text-align: center", font-size: 1.2em>
-Guest Researcher, TU Delft, The Netherlands (March 2025-June 2025)
+Guest Researcher, TU Delft, The Netherlands (March 2025 - June 2025)
 
 </div>
 

@@ -1,23 +1,38 @@
-# Workshop Template
-
-This repository provides a template for creating JB2 books using [MystMD](https://mystmd.org/). It is intended to be a general tool to support new users of Jupyter Book 2 and MystMD, in particular for use in workshop settings where participants may not have time or ability to install the required software on a personal computer.
-
-_The Workshop Template was created for JupyterCon 2025. Slides are in the Turing Way Github Organization: [slides](https://the-turing-way.github.io/Build-a-Jupyter-Book-with-The-Turing-Way/#/4) and [repository](https://github.com/the-turing-way/Build-a-Jupyter-Book-with-The-Turing-Way)._
-
-## Features
-
-- Configured as a GitHub template repository, allowing duplication with only a few clicks.
-- Pre-configured structure for MystMD book projects using two MyST Templates: `book-theme` for websites and `plain_typst_book` for PDF output. 
-- Example content, configuration files and GitHub Actions workflow.
-- Exercises for users to learn to easily edit and create content.
-- Website and PDF are built and deployed using two separate GitHub Actions workflows.
-- Installation and editing on a personal computer not required (due to GH Actions workflows).
-
-## Getting Started
-
-If you are using this Template to learn to use Jupyter Book 2 and/or MystMD, visit the GitHub Pages site [jupyter-book.github.io/workshop-template/](https://jupyter-book.github.io/workshop-template/) and follow the instructions.
-
-If you have used this GitHub template repository to create a new book project, delete and/or modify the contents of this README and start editing your book!
+HLA-B27 Molecular Mimicry Study — MD Simulation & Analysis
+📘 Project Overview
+•	This repository documents a complete computational workflow to identify Klebsiella pneumoniae–derived peptides that mimic a human Annexin peptide (ANX) in binding to HLA-B27:05, a Class-I MHC associated with autoimmune diseases such as Ankylosing Spondylitis.
+•	The objective is to investigate whether microbial peptides can:
+•	Bind HLA-B27 in a similar way as human peptides.
+•	Form stable structural interactions.
+•	Exhibit comparable post-MD behavior.
+•	Supporting a potential molecular mimicry mechanism.
+________________________________________
+•	I focused on learning:
+•	Peptide generation and filtering
+•	HLA-B27 binding predictions
+•	Sequence similarity and mimicry search
+•	Peptide docking and molecular dynamics (MD)
+•	Trajectory analysis (RMSD, RMSF, SASA, PCA, MMGBSA
+________________________________________
+•	🛠️## Overview of the Pipeline
+•	Generate peptides from human Annexin (anx) and full K. pneumoniae (kp)proteome
+•	HLA-B27 binding prediction using NetMHCpan
+•	Sequence similarity & mimic scoring
+•	Docking using AlphaFold-Multimer
+•	Structure optimization with AmberTools23 (tleap)
+•	Molecular Dynamics (MD) simulation in GROMACS 2024.
+•	Post-process trajectories (centering, frame skipping, fitting)
+•	Post-MD analysis: RMSD, RMSF, Rg, SASA, H-bonds, MM-GBSA
+•	Identification of strongest microbial mimic
+________________________________________
+•	⚠️ **Note: ** The workflow was developed through trial and error, is not fully automated, and may not be fully reproducible. Scripts are shared to illustrate my learning process. This workflow includes:
+________________________________________
+•	📘 ## Reproducibility Note
+•	project was created for learning purposes. The scripts were developed through trial and error and are not fully automated, so the workflow may not be fully reproducible.The scripts are shared mainly to illustrate the approach and my learning process, not as a polished, production-ready workflow.
+________________________________________
+•	📌📑 ## Citation
+•	If you use this repository, analysis pipeline, or scripts, please cite: Singh S. (2025). GitHub Repository for HLA-B27 molecular mimicry MD analysis. Link: https://github.com/singh-sanju/Protein_peptide_mimicry_study
+________________________________________
 
 ## License
 
@@ -29,4 +44,8 @@ If you are using this template to create a new repository, specify your license 
 
 ## Acknowledgements
 
-This project uses material from Freek Pols created for other book projects at Delft University of Technology. It also is (heavily) influenced by the [TeachBooks Template for Jupyter Book 1](https://github.com/teachBooks/template).
+•	I would like to thank my principal investigator, Dr. Nikolina Šoštarić (Bionanoscience Department, TU Delft, The Netherlands), for guidance and constructive feedback at various stages of this work.
+
+•	Computational work, including molecular dynamics production runs and post-processing, was performed on the DelftBlue Supercomputer at TU Delft.
+
+•	I further thank Dr. C. F. J. Pols, (Assistant Professor, Science & Engineering Education Department, TU Delft) for suggesting the use of Jupyter Notebook for presenting the material and for sharing a workshop template that supported the dissemination of this work.

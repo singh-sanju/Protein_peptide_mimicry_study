@@ -38,24 +38,23 @@ project:
     - file: index.md                     
     - file: content/introduction.md   
 
-    - file: content/materials.md
+    - file: content/tools.md
 
     - file: content/methods.md
       children:
-        - file: content/data-preparation.md
+        - file: content/data_preparation.md
           children:
             - file: content/pep_slicing.md
             - file: content/pep_mimicry.md
         - file: content/docking.md
         - file: content/mdrun.md
-        - file: content/correction_md.md
-        - file: content/post_md.md
+        - file: content/correction.md
+        - file: content/post_analysis.md
 
-    - file: content/analysis.md
+    - file: content/results.md
     - file: content/conclusion.md
     - file: content/Reproducibility.md
     - file: content/acknowledgements.md
-    - file: content/references.md
     # - file: content/example.ipynb
   abbreviations:
     JB2: Jupyter Book 2
@@ -66,7 +65,10 @@ project:
     VSC: Visual Studio Code
     CLI: commmand line interface
 
-    
+bibliography:
+  file: reference.bib
+  suppress_page_references: true
+
 site:
   template: book-theme
   options:
@@ -79,3 +81,4 @@ site:
   actions:
     - title: Feedback
       url: https://github.com/jupyter-book/workshop-template/issues
+
