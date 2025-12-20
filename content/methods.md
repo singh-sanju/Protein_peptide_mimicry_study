@@ -31,7 +31,7 @@ The overview of the Pipeline is shown in {numref}`fig_workflow` and the detailed
 
 ```{figure} figures/methodology.png
 :name: fig_workflow
-:width: 100%
+:width: 70%
 :align: center
 
 Overview of the workflow used in this study

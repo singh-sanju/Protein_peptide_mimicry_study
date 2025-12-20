@@ -1,4 +1,4 @@
-# Peptide Filtering and Similarity Screening
+#### ii. Peptide Filtering and Similarity Screening
 
 The large peptide pool generated from slicing was filtered to identify biologically relevant molecular mimicry candidates. The filtering strategy focused on three key criteria:
 
@@ -7,10 +7,10 @@ The large peptide pool generated from slicing was filtered to identify biologica
 - Potential functional relevance  
 
 
-## HLA-B27 Binding Prediction
+##### HLA-B27 Binding Prediction
 
 All generated peptides from both human and microbial sources were screened
-for HLA-B27 binding using NetMHCpan.
+for HLA-B27 binding using NetMHCpan @Reynisson2020NetMHCpan,.
 
 Based on predicted binding affinity, peptides were classified as:
 - Strong binders (SB)
@@ -18,18 +18,18 @@ Based on predicted binding affinity, peptides were classified as:
 
 Only top strong binders were retained for further analysis based on binding scores. Approximately ten strong-binding ANX peptides and ninety strong-binding microbial peptides were selected at this stage.
 
-## Mimicry Scoring
+##### Mimicry Scoring
 
 Sequence similarity between human ANX peptides and microbial peptides was evaluated using a two-step approach.
 
-First, BLAST-based sequence comparison was used for an initial inspection of similarity between human and microbial peptides. This step provided a broad overview of potential overlaps and helped guide further analysis.
+First, BLAST-based @Altschul1990BLAST, sequence comparison was used for an initial inspection of similarity between human and microbial peptides. This step provided a broad overview of potential overlaps and helped guide further analysis.
 
-Subsequently, pairwise sequence alignment was performed using Biopython (Bio.Align) with the BLOSUM62 scoring matrix. This step was used for systematic and quantitative similarity scoring between ANX-derived peptides and *Klebsiella pneumoniae* peptides.
+Subsequently, pairwise sequence alignment was performed using Biopython (Bio.Align) @Cock2009Biopython, with the BLOSUM62 scoring matrix @Henikoff1992BLOSUM,. This step was used for systematic and quantitative similarity scoring between ANX-derived peptides and *Klebsiella pneumoniae* peptides.
 
 The pairwise alignment scores were used to identify microbial peptides sharing conserved residues and sequence patterns with the human reference peptide, and these candidates were carried forward for binding prediction and structural analysis.
 
 
-## Selection of Top Mimicry Candidates
+##### Selection of Top Mimicry Candidates
 
 To prioritize candidates for structural modeling, all 28 peptides (3 anx and 25 kp) obtained from previous scoring were ranked based on a combination of:
 - Predicted HLA-B27 binding strength  
@@ -39,8 +39,7 @@ For each 3 ANX peptide, the top 5 microbial mimicry candidates were extracted by
 
 :::{note} Note:
 
-All the peptides filtering and similarity screening processes were performed using custom Python scripts.
-
-all the scripts are available in the repository under: scripts/pep_generation/
+- Pairwise alignment was performed using Bio.Align implemented in Biopython.
+- All the peptides filtering and similarity screening processes were performed using custom Python scripts which are available in the repository under: scripts/pep_generation/
 :::
 

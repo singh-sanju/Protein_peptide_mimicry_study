@@ -1,10 +1,10 @@
-# 2. Molecular Docking
+## 2. Molecular Docking
 
 Molecular docking was performed to model peptide–HLA-B27 complexes and
 evaluate the binding orientation of selected human and microbial peptides
 within the HLA groove.
 
-Docking was carried out using **AlphaFold-Multimer**, which was used to
+Docking was carried out using **AlphaFold-Multimer** @jumper2021highly and HADDOCK @van2003haddock, via web server, which was used to
 generate structural models of peptide–HLA-B27 complexes. For each selected
 Annexin (ANX) peptide, all shortlisted *Klebsiella pneumoniae* (KP) peptides
 were docked individually with HLA-B27.
@@ -36,7 +36,7 @@ Based on docking confidence scores and visual inspection, three microbial peptid
 The final peptide set consisted of four peptides:
 
 **Human peptide**
-- *IRSEFKRKY* (ANX)
+- *IRSEFKRKY* (anx)
 
 **Microbial peptides**
 - *GRSDFKGDY* (KP1)  
@@ -48,7 +48,7 @@ The final peptide set consisted of four peptides:
 
 ```{figure} figures/docked_pep.png
 :name: fig_dockedpep
-:width: 95%
+:width: 85%
 :align: center
 
 Model of peptides generated on PyMol
@@ -60,9 +60,7 @@ the HLA groove and were selected for molecular dynamics simulations.
 
 :::{note}Note
 
-- Peptide–HLA complexes were prepared and visualized using PyMOL prior>
-
-- Visual inspection of all models was also  performed in **PyMOL** to >
+All peptide models were prepared using PyMol @pymol, for docking and visual inspection of docked Peptide–HLA complexes were also permormed and manually inspected in PyMOL to verify peptide placement, binding orientation, and overall structural plausibility within the HLA binding groove.
 
 :::
 
