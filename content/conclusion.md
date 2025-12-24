@@ -7,13 +7,15 @@ This resemblance supports the hypothesis that kp1 may participate in
 molecular mimicry mechanisms, potentially contributing to immune
 cross-reactivity in HLA-B27-associated conditions.
 
-<br>
 
 ## Limitations and Future Work
 
-These findings provide a computational basis for further investigation
-of kp1 in the context of HLA-B27-associated immune cross-reactivity.
-However, additional studies involving structural superposition and
-immunogenicity prediction are required to confirm functional mimicry.
+Due to the limited number of peptides analyzed, the findings of this study
+are preliminary. Future work will focus on expanding the peptide dataset
+to enable systematic screening and the application of machine learning
+approaches for identifying molecular mimicry patterns. In addition,
+structural superposition and immunogenicity prediction will be required
+to confirm functional mimicry in the context of HLA-B27-associated
+immune cross-reactivity.
 
 

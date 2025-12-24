@@ -50,7 +50,7 @@ binders while reducing the total search space.
 
 - All the peptide slicing processes were performed using custom Python scripts developed for this study.
 
-- All the scripts used for peptide slicing are available in the projector repository under	*/scripts/data_preparation/*.
+- All the scripts used for peptide slicing are available in the projector repository under	*/scripts/pep_generation/*.
 :::
 
 
